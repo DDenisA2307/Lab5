@@ -101,12 +101,12 @@ total 40066
 NAME    USED  AVAIL     REFER  MOUNTPOINT
 otus1  21.6M   330M     21.6M  /otus1
 otus2  17.7M   334M     17.6M  /otus2
-otus3  10.8M   341M     10.7M  /otus3
+otus3  10.8M   341M     10.7M  /otus3  - Самый маленлкий размер занимаемый после сжатия
 otus4  39.2M   313M     39.2M  /otus4
 [root@zfs ~]# zfs get all | grep compressratio | grep -v ref
 otus1  compressratio         1.81x                  -
 otus2  compressratio         2.22x                  -
-otus3  compressratio         3.65x                  -
+otus3  compressratio         3.65x                  - - Самый высокий коэффициент сжатия
 otus4  compressratio         1.00x                  -
 [root@zfs ~]# wget -O archive.tar.gz --no-check-certificate 'https://drive.google.com/u/0/uc?id=1KRBNW33QWqbvbVHa3hLJivOAt60yukkg&export=download'
 --2023-12-06 11:29:48--  https://drive.google.com/u/0/uc?id=1KRBNW33QWqbvbVHa3hLJivOAt60yukkg&export=download

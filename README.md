@@ -101,7 +101,7 @@ total 40066
 NAME    USED  AVAIL     REFER  MOUNTPOINT
 otus1  21.6M   330M     21.6M  /otus1
 otus2  17.7M   334M     17.6M  /otus2
-otus3  10.8M   341M     10.7M  /otus3  - Самый маленлкий размер занимаемый после сжатия
+otus3  10.8M   341M     10.7M  /otus3  - Самый маленький размер занимаемый после сжатия
 otus4  39.2M   313M     39.2M  /otus4
 [root@zfs ~]# zfs get all | grep compressratio | grep -v ref
 otus1  compressratio         1.81x                  -
